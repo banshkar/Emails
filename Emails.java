@@ -3,7 +3,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 public class Emails {
     public  void validEmail(String email){
-        Pattern pattern =Pattern.compile("^[a-zA-Z]+[0-9]{3}?(@)+[a-z]+?(.)+[a-z]{3}+$");
+        Pattern pattern =Pattern.compile("^[a-zA-Z]+[.]+[0-9]{3}?(@)+[a-z]{3}?(.com)+[.]+[a-z]{2}+$");
         Matcher check =pattern.matcher(email);
         if(check.matches()){
             System.out.println("Email valid ");
